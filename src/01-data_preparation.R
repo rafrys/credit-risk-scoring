@@ -47,3 +47,5 @@ df %>%
 df <- 
   df %>% 
   mutate(exited = factor(exited, levels = c(1,0), labels = c("Churn", "Remain")))
+
+###

@@ -8,7 +8,7 @@ title: "Credit_Risk_Project"
 output: html_notebook
 
 
-```{r}
+```{r, warning=FALSE}
 #Loading packages
 list_of_packages <- c("tidyverse","caret","dplyr",
                       "rpart", "rpart.plot", "randomForest","ROCR","MASS",
@@ -34,7 +34,8 @@ par(xpd = T, mfrow = c(1,1))
 
 ```{r}
 #Download the data
-df <- read.csv2("C:/Users/adria/Desktop/Churn_Modelling.csv", sep = ",")
+#df <- read.csv2("C:/Users/adria/Desktop/Churn_Modelling.csv", sep = ",")
+df <- read.csv2("data/Churn_Modelling.csv", sep = ",")
 
 #Basic information
 dim(df)
